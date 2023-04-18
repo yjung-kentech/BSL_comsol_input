@@ -17,10 +17,11 @@ Rc_fullpath = '/Users/yoorim/Documents/MATLAB/cellmodel_I_T_SOC_Rc.txt';
 % load cell model
 load(origin_fullpath); % assume variable name 'data_accum'
 
-% Crate, Temperature, SOC vector
+% Crate vector
 Crate_column = cell2mat(data_accum.Crate);
 Crate_unique = unique(Crate_column);
 
+% Temperature vector
 T_column = cell2mat(data_accum.Temperature);
 T_unique = unique(T_column);
 
